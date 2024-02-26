@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+  width: 10%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+.Q2{
+  margin-top: 10vh;
+}
+.Q3{
+  margin-top: 10vh;
+}
+.error {
+  color: red;
+  font-size: 0.8em;
+  display: none;
+}
+
+.error.visible {
+  display: block;
+}
+
+.Q4{
+  margin-top: 10vh;
+}
+.green-bg {
+  background-color: lightgreen;
+}
+
+.blue-bg {
+  background-color: lightblue;
+}
+
+.Q4 table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Q4 th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.Q4 th {
+  background-color: lightblue;
+}

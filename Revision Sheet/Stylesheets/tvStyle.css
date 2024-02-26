@@ -1,0 +1,25 @@
+body{
+  background-color: #5F9EA0;
+}
+span{
+  font-size: 24px;
+  text-align:right;
+}
+table{
+  width: 100%;
+  height: 100px;
+}
+#price{
+  width: 60%;
+}
+#pic{
+  width: 30%;
+  height: 50%;
+}
+img{
+  width: 612px;
+  height: 512px;
+}
+h1{
+  color:darkblue;
+}
