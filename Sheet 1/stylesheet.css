@@ -1,14 +1,57 @@
+*{
+  font-family: helvetica;
+}
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+body{
+  background-color: rgb(31, 31, 31);
+}
+
+h1{
+  color: rgb(70, 245, 210);
+}
+label{
+  margin-bottom: 10px;
+  color:rgb(33, 247, 229);
+}
+input{
+  height: 25px;
+  padding-left: 10px;
+  color:chartreuse;
+  background-color: rgb(65, 65, 71);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 6.9px;
+}
+select{
+  background-color: bisque;
+  border-radius: 10px;
+  margin-top: 2.9px;
+  margin-bottom: 6.9px;
+}
+
+button{
+  border: none;
+  padding: 10px;;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color:rgb(76, 76, 91) ;
+  color: rgb(33, 247, 229);
+}
 table {
+  margin-top: 15px;
   border-collapse: collapse;
   width: 10%;
 }
 th, td {
+  color:rgb(33, 247, 229);
   border: 1px solid black;
   padding: 8px;
   text-align: center;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: #222f31;
 }
 .Q2{
   margin-top: 10vh;
@@ -29,15 +72,10 @@ th {
 .Q4{
   margin-top: 10vh;
 }
-.green-bg {
-  background-color: lightgreen;
-}
 
-.blue-bg {
-  background-color: lightblue;
-}
 
 .Q4 table {
+  background-color: rgb(59, 82, 90);
   border-collapse: collapse;
   width: 50%;
   margin: 0 auto;

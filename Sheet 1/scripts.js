@@ -1,16 +1,16 @@
 function calculate() {
   const operand1 = document.getElementById("operand1").value;
   const operand2 = document.getElementById("operand2").value;
-
-  const error = document.getElementById("error");
-  error.innerHTML = "";
-  if (operand2 === 0) {
-    error.innerHTML = "cant divide or mod by zero mate";
-    return;
+  if (operand2 === "0" || operand1 === "0") {
+    alert("cant divide or mod by zero mate");
   }
   const table = document.getElementById("results");
   if(!(isNaN(operand1))&&!(isNaN(operand2))){ // i added this to the other Questions too just so its not dumb
   table.innerHTML = `
+    <tr>
+      <th>Operation</th>
+      <th>Result</th>
+    </tr>
     <tr>
       <th>Addition</th>
       <td>${parseFloat(operand1) + parseFloat(operand2)}</td> 
@@ -70,34 +70,18 @@ document.getElementById("convertBtn").addEventListener("click", tempConvert);
 const form = document.getElementById("pizza-form");
     const nameInput = document.getElementById("name");
     const sizeSelect = document.getElementById("size");
+    const topping = document.getElementsByClassName("topping")
 
-    const nameError = document.getElementById("name-error");
-    const sizeError = document.getElementById("size-error");
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      if (nameInput.value === "") {
-        nameError.innerHTML = "Name is required.";
-        nameError.classList.add("visible");
-      } else {
-        nameError.classList.remove("visible");
-      }
-
-      if (sizeSelect.value === "") {
-        sizeError.innerHTML = "Size is required.";
-        sizeError.classList.add("visible");
-      } else {
-        sizeError.classList.remove("visible");
-      }
-
+    form.addEventListener("submit",(e)=>{
+      e.preventDefault();
+      
       if (nameInput.value !== "" && sizeSelect.value !== "") {
         const pizzaOrder = {
           name: nameInput.value,
           size: sizeSelect.value,
           toppings: []
-        };
-      
+        }
+      }
         // ill try to think of this part (getting toppings) -> its probably getting an array w/ foreach & joining
         // the errors dont work either ~~~
         
@@ -106,12 +90,11 @@ const form = document.getElementById("pizza-form");
           "\nSize: " + pizzaOrder.size +
           "\nToppings: " + pizzaOrder.toppings.join(", ")
         );
-      }
-  });
+      });
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-const factorForm = document.getElementById("factors-form");
+const factorForm = document.getElementById("factorsForm");
 const numberInput = document.getElementById("number");
 var alrClicked= false;
 
@@ -142,8 +125,6 @@ factorForm.addEventListener("submit", (e)=> {
     row.appendChild(cell);
     table.appendChild(row);
   }
-
-  table.classList.add(factors.length % 2 === 0 ? "blue-bg" : "green-bg");
   document.body.appendChild(table);
 
   console.log(`Number of factors: ${factors.length}`);
