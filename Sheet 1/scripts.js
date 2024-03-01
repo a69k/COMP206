@@ -66,31 +66,34 @@ function tempConvert() {
 document.getElementById("convertBtn").addEventListener("click", tempConvert);
 
 /////////////////////////////////////////////////////////////////
-
 const form = document.getElementById("pizza-form");
-    const nameInput = document.getElementById("name");
-    const sizeSelect = document.getElementById("size");
-    const topping = document.getElementsByClassName("topping")
+const nameInput = document.getElementById("name");
+const sizeSelect = document.getElementById("size");
+const toppings = document.querySelectorAll(".topping"); // Use querySelectorAll ~~ THIS WAS MY PROBLEM LMAO
 
-    form.addEventListener("submit",(e)=>{
-      e.preventDefault();
-      
-      if (nameInput.value !== "" && sizeSelect.value !== "") {
-        const pizzaOrder = {
-          name: nameInput.value,
-          size: sizeSelect.value,
-          toppings: []
-        }
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (nameInput.value !== "" && sizeSelect.value !== "") {
+    const pizzaOrder = {
+      name: nameInput.value,
+      size: sizeSelect.value,
+      toppings: [],
+    };
+    // Loop through all checkbox elements with class "topping"
+    toppings.forEach((topping) => {
+      if (topping.checked) {
+        pizzaOrder.toppings.push(topping.value); // Add the value of checked toppings
       }
-        // ill try to think of this part (getting toppings) -> its probably getting an array w/ foreach & joining
-        // the errors dont work either ~~~
-        
-        alert(
-          "Name: " + pizzaOrder.name +
-          "\nSize: " + pizzaOrder.size +
-          "\nToppings: " + pizzaOrder.toppings.join(", ")
-        );
-      });
+    });
+
+    alert(
+      "Name: " + pizzaOrder.name +
+        "\nSize: " + pizzaOrder.size +
+        "\nToppings: " + pizzaOrder.toppings.join(", ")
+    );
+  }
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
