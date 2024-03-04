@@ -1,0 +1,102 @@
+$pGreen: $pGreen;
+
+*{
+  font-family: helvetica;
+}
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+body{
+  background-color: rgb(31, 31, 31);
+}
+
+h1{
+  color: $pGreen;
+}
+label{
+  margin-bottom: 10px;
+  color:$pGreen;
+}
+input{
+  height: 25px;
+  padding-left: 10px;
+  color:chartreuse;
+  background-color: rgb(65, 65, 71);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 6.9px;
+}
+select{
+  background-color: $pGreen;
+  opacity: 69%;
+  border-radius: 10px;
+  margin-top: 2.9px;
+  margin-bottom: 6.9px;
+  padding:10px;
+}
+
+button{
+  cursor:pointer;
+  border: none;
+  padding: 7.7px;;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color:rgb(76, 76, 91) ;
+  color: $pGreen;
+}
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 10%;
+}
+th, td {
+  color:$pGreen;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #222f31;
+}
+
+.Q2{
+  margin-top: 10vh;
+}
+
+.Q3{
+  margin-top: 10vh;
+
+  .error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+  }
+
+  .error.visible {
+    display: block;
+  }
+  textarea {
+    background-color: rgb(65, 65, 71);
+    box-sizing: border-box;
+  }
+
+}
+
+.Q4{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  label{
+    margin-right: 1rem;
+  }
+  input{
+    width: 20%;
+    height:50px;
+  }
+  button{
+    padding: 15px;
+  }
+  p{
+    color: white;
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  font-family: helvetica;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+h1 {
+  color: rgb(33, 247, 229);
+}
+
+label {
+  margin-bottom: 10px;
+  color: rgb(33, 247, 229);
+}
+
+input {
+  height: 25px;
+  padding-left: 10px;
+  color: chartreuse;
+  background-color: rgb(65, 65, 71);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 6.9px;
+}
+
+select {
+  background-color: rgb(33, 247, 229);
+  opacity: 69%;
+  border-radius: 10px;
+  margin-top: 2.9px;
+  margin-bottom: 6.9px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 7.7px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color: rgb(76, 76, 91);
+  color: rgb(33, 247, 229);
+}
+
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 10%;
+}
+
+th, td {
+  color: rgb(33, 247, 229);
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #222f31;
+}
+
+.Q2 {
+  margin-top: 10vh;
+}
+
+.Q3 {
+  margin-top: 10vh;
+}
+.Q3 .error {
+  color: red;
+  font-size: 0.8em;
+  display: none;
+}
+.Q3 .error.visible {
+  display: block;
+}
+.Q3 textarea {
+  background-color: rgb(65, 65, 71);
+  box-sizing: border-box;
+}
+
+.Q4 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.Q4 label {
+  margin-right: 1rem;
+}
+.Q4 input {
+  width: 20%;
+  height: 50px;
+}
+.Q4 button {
+  padding: 15px;
+}
+.Q4 p {
+  color: white;
+}/*# sourceMappingURL=stylesheet.css.map */

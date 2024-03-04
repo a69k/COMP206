@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="Q1">
+    <h1>Question One: Primes</h1>
+    <input type="text" id="numbers" placeholder="Enter numbers">
+    <button onclick="findPrimes()">Show Primes</button>
+    <br>
+    <p id="result"></p>
+  </div>
+  <div class="Q2">
+    <h1>Question Two: Strings</h1>
+
+    <input type="text" id="string" placeholder="Enter string">
+    <button onclick="handleString()">Handle String</button>
+    <p id="strRes"></p>
+  </div>
+  <div class="Q3">
+    <h1>Question Three: Student Sorting</h1>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter string" required><br>
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Enter Age" required><br>
+    <label for="gpa">GPA</label>
+    <input type="number" id="gpa" placeholder="Enter GPA" required><br>
+    <button onclick="addStudent()">Add Student</button>
+    <select id="sort" required>
+      <option value="">Select a property</option>
+      <option value="gpaDSC">GPA (Descending)</option>
+      <option value="nameASC">Name(Ascending)</option>
+    </select><br>
+    <textarea id="resTA" rows="8" cols="69"></textarea>
+  </div>
+  <div class="Q4">
+    <h1>Question Four</h1>
+    <label for="words">Words</label>
+    <input type="text" id="words" placeholder="Enter words" required><br>
+    <button onclick="qFourArr()">Click</button>
+    <p id="qFourRes"></p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
