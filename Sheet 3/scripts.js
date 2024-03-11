@@ -19,8 +19,7 @@ function removeRepetitions() {
   q1Res.innerHTML = resultArray.join(' ');
 }
 
-
-// Question Two
+// Question Two (2 ez)
 const paragraph = document.getElementById('testP');
 const emWords = paragraph.getElementsByTagName('em');
 
@@ -38,57 +37,54 @@ for (let i = 0; i < emWords.length; i++) {
 })
 
 // Question Three
-    document.addEventListener('DOMContentLoaded', () => { 
-      const htmlCB = document.getElementById('htmlCB');
-      const cssCB = document.getElementById('cssCB');
-      const jsCB = document.getElementById('jsCB');
-      const phpCB = document.getElementById('phpCB');
-      const fileList = document.getElementById('fileList');
-      const fileListArr = Array.from(fileList.options);
+document.addEventListener('DOMContentLoaded', () => { 
+  const htmlCB = document.getElementById('htmlCB');
+  const cssCB = document.getElementById('cssCB');
+  const jsCB = document.getElementById('jsCB');
+  const phpCB = document.getElementById('phpCB');
+  const fileList = document.getElementById('fileList');
+  const fileListArr = Array.from(fileList.options);
 
-      const filterFiles = () => {
-        const selectedFileTypes = [];
-        
-        if (htmlCB.checked) selectedFileTypes.push('html');
-        if (cssCB.checked) selectedFileTypes.push('css');
-        if (jsCB.checked) selectedFileTypes.push('js');
-        if (phpCB.checked) selectedFileTypes.push('php');
+  const filterFiles = () => {
+    const selectedFileTypes = [];
+    
+    if (htmlCB.checked) selectedFileTypes.push('html');
+    if (cssCB.checked) selectedFileTypes.push('css');
+    if (jsCB.checked) selectedFileTypes.push('js');
+    if (phpCB.checked) selectedFileTypes.push('php');
 
-        fileListArr.forEach(option => {
-          option.style.display = 'none'
-          const optionFileType = option.value.split('.').pop(); // to return the filetype of each of the file list select elements
-          console.log(optionFileType) // this was testing 
-          if (selectedFileTypes.length === 0 || selectedFileTypes.includes(optionFileType)) { // had to include if no selected condition (the first 1) because they'd all be hidden otherwise (if none selected)
-            option.style.display = 'block';
-          }
-        }); 
-      };
-      // IMPORTANT NOTE: to do the opposite (what the sheet really wants, you can swap the none and block on lines 57 and 60 respectively)
+    fileListArr.forEach(option => {
+      option.style.display = 'none'
+      const optionFileType = option.value.split('.').pop(); // to return the filetype of each of the file list select elements
+      console.log(optionFileType) // this was testing 
+      if (selectedFileTypes.length === 0 || selectedFileTypes.includes(optionFileType)) { // had to include if no selected condition (the first 1) because they'd all be hidden otherwise (if none selected)
+        option.style.display = 'block';
+      }
+    }); 
+  };
+  // IMPORTANT NOTE: to do the opposite (what the sheet really wants, you can swap the none and block on lines 57 and 60 respectively)
 
-      htmlCB.addEventListener('change', filterFiles);
-      cssCB.addEventListener('change', filterFiles);
-      jsCB.addEventListener('change', filterFiles);
-      phpCB.addEventListener('change', filterFiles);
-    });
+  htmlCB.addEventListener('change', filterFiles);
+  cssCB.addEventListener('change', filterFiles);
+  jsCB.addEventListener('change', filterFiles);
+  phpCB.addEventListener('change', filterFiles);
+});
 
 // Question Four 
-
 function genSubString() {
   const inputStr = document.getElementById('subStr').value;
   const qfRes = document.getElementById('qfRes');
   const substrings = [];
-
-  let currSubStr = '';
+  let currSubStr;
 
   for (let i = 0; i < inputStr.length; i++) {
     const char = inputStr[i];
 
     if (char !== ' ') { // this is because the old method i tried gave me hel lo wor ld it counted the space between the words.
       currSubStr += char;
-
       if (currSubStr.length === 3) {
         substrings.push(currSubStr);
-        currSubStr = '';
+        currSubStr = ''; //clearing it 
       }
     }
   }
