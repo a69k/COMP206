@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheet Three</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+
+  <div class="Q1">
+    <h1>Question One</h1>
+    <label for="q1Input">Input String</label>
+    <input type="text" id="q1Input" placeholder="Enter Numbers"><br>
+    <button onclick="removeRepetitions()">Click</button>
+    <p id="q1Res"></p>
+  </div>
+
+  <div class="Q2">
+  <h1>Question Two</h1>
+  <p id="testP">Some people love banana pizza. <em>Yes</em>, it sounds crazy. <em>However</em>, almost everyone who's tried it is a fan. <em>In fact</em>, banana pizza is widely popular in Sweden.</p>
+  </div>
+
+  <div class="Q3">
+    <h1>Question Three</h1>
+    <label>
+      <input type="checkbox" id="htmlCB"> HTML
+    </label>
+
+    <label>
+      <input type="checkbox" id="cssCB"> CSS
+    </label>
+
+    <label>
+      <input type="checkbox" id="jsCB"> JavaScript
+    </label>
+
+    <label>
+      <input type="checkbox" id="phpCB"> PHP
+    </label>
+    <br>
+    <label>
+      File List:
+      <select id="fileList">
+        <option value="first.js">first.js</option>
+        <option value="second.css">second.css</option>
+        <option value="third.html">third.html</option>
+        <option value="fourth.php">fourth.php</option>
+        <option value="fifth.js">fifth.js</option>
+        <option value="sixth.css">sixth.css</option>
+      </select>
+    </label>
+  </div>
+
+  <div class = "Q4">
+    <h1>Question Four</h1>
+    <label for="subStr">Input String</label>
+    <input type="text" id="subStr" placeholder="Enter string"><br>
+    <button onclick="genSubString()">Find Substrings</button>
+    <p id="qfRes"></p>
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>

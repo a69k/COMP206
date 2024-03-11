@@ -1,0 +1,92 @@
+* {
+  font-family: helvetica;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+}
+
+h1 {
+  color: rgb(33, 247, 229);
+}
+
+label {
+  margin-bottom: 10px;
+  color: rgb(33, 247, 229);
+}
+
+input {
+  height: 25px;
+  padding-left: 10px;
+  color: chartreuse;
+  background-color: rgb(65, 65, 71);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 6.9px;
+}
+
+select {
+  background-color: rgb(33, 247, 229);
+  opacity: 69%;
+  border-radius: 10px;
+  margin-top: 2.9px;
+  margin-bottom: 6.9px;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color: rgb(76, 76, 91);
+  color: rgb(33, 247, 229);
+}
+
+.Q1 input{
+  width: 20%;
+  height: 50px;
+}
+
+.Q1 label{
+  margin-right: 1rem;
+}
+
+#q1Res{
+  color:rgb(105, 114, 113);
+}
+
+.Q2 {
+  margin-top: 10vh;
+}
+.Q2 p{
+  color:rgb(105, 114, 113);
+}
+
+.Q3 {
+  margin-top: 10vh;
+}
+
+
+.Q4 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.Q4 label {
+  margin-right: 1rem;
+}
+.Q4 input {
+  width: 20%;
+  height: 50px;
+}
+.Q4 button {
+  padding: 15px;
+}
+.Q4 p {
+  color: rgb(105, 114, 113);
+}/*# sourceMappingURL=stylesheet.css.map */
