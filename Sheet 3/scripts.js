@@ -73,19 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
 // Question Four 
 function genSubString() {
   const inputStr = document.getElementById('subStr').value;
+  const subStrSize = parseInt(document.getElementById('sizeInput').value);
   const qfRes = document.getElementById('qfRes');
   const substrings = [];
-  let currSubStr;
+  let currSubStr = '';
 
   for (let i = 0; i < inputStr.length; i++) {
     const char = inputStr[i];
 
-    if (char !== ' ') { // this is because the old method i tried gave me hel lo wor ld it counted the space between the words.
+    if (char !== ' ') {
       currSubStr += char;
-      if (currSubStr.length === 3) {
-        substrings.push(currSubStr);
-        currSubStr = ''; //clearing it 
-      }
+    }
+
+    if (currSubStr.length === subStrSize || char === ' ') {
+      substrings.push(currSubStr);
+      currSubStr = '';
     }
   }
 
@@ -93,5 +95,6 @@ function genSubString() {
     substrings.push(currSubStr);
   }
 
-  qfRes.innerHTML = substrings.join(', '); 
+  qfRes.innerHTML = substrings.join(', ');
 }
+
