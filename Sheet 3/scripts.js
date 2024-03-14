@@ -97,4 +97,3 @@ function genSubString() {
 
   qfRes.innerHTML = substrings.join(', ');
 }
-
