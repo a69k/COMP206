@@ -1,0 +1,46 @@
+body {
+  font-family: Helvetica;
+  background-color: rgb(31, 31, 31);
+}
+
+h1 {
+  color: rgb(33, 247, 229);
+  font-size: 44px;
+}
+
+label {
+  font-size: 18px;
+  color: rgb(33, 247, 229);
+}
+
+input {
+  height: 40px;
+  padding-left: 10px;
+  color: chartreuse;
+  background-color: rgb(65, 65, 71);
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+#uLabel #pLabel{
+  font-size:22px;
+  
+}
+select {
+  background-color: rgb(33, 247, 229);
+  opacity: 69%;
+  border-radius: 10px;
+  margin-top: 2.9px;
+  margin-bottom: 6.9px;
+  padding: 10px;
+}
+
+#submit {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background-color: rgb(76, 76, 91);
+  color: rgb(33, 247, 229);
+}

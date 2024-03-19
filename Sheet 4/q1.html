@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Four</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+    <label for="user" id="uLabel">
+        Username:
+    </label>
+    <br>
+    <input id="user" placeholder="Enter Username" type="text">
+    <br>
+    <label for="pass" id="pLabel">
+        Password:
+    </label>
+    <br>
+    <input id="pass" placeholder="Enter Password" type="password">
+    <br>
+    <label>
+        Semester:
+    </label>
+    <br>
+    <select id="sel">
+        <option selected hidden>Select your Semester level</option>
+        <option>Semester one</option>
+        <option>Semester two</option>
+    </select>
+    <br>
+    <label>
+        Courses Taken
+    </label>
+    <input type="checkbox" id="c102" value="COMP102">
+    <label for="c102">
+        COMP 102
+    </label>
+    <input type="checkbox" id="c206" value="COMP206">
+    <label for="c206">
+        COMP 206
+    </label>
+    <input type="checkbox" id="m101" value="MATH101">
+    <label for="m101">
+        MATH 101
+    </label>
+    <br>
+    <input type="checkbox" id="newsLetter" value="">
+    <label for="newsLetter">
+        Sign up for news letter
+    </label>
+    <br>
+    <input type="submit" value="Register" id="submit">
+    <br>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
